@@ -1,6 +1,6 @@
 var ringer = {
     //countdown_to: "10/31/2014",
-    countdown_to: "06/02/2020 19:20:59",
+    countdown_to: "06/02/2020 20:11:00",
     rings: {
       
       'HORAS': {
