@@ -1,6 +1,6 @@
 var ringer = {
     //countdown_to: "10/31/2014",
-    countdown_to: "06/03/2020 09:30:00",
+    countdown_to: "06/04/2020 10:00:00",
     rings: {
       
       'HORAS': {
@@ -55,7 +55,8 @@ var ringer = {
       
       $r.time = (new Date().getTime()) - $r.countdown_to_time;
       if($r.time >= 0){
-        document.getElementById("mensajito").innerHTML = "El evento iniciara en breve";
+        document.getElementById("mensajito").innerHTML = "El evento iniciará en breve";
+        document.getElementById("mensajito").style.color = "yellow";
         $r.time = 0;
         for(var r_key in $r.rings) $r.unit(idx++,r_key,$r.rings[r_key]);
         return false;
