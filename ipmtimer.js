@@ -17,7 +17,7 @@ var ringer = {
       },
       
      },
-    r_count: 5,
+    r_count: 3,
     r_spacing: 40, // px
     r_size: 200, // px
     r_thickness: 30, // px
@@ -27,6 +27,7 @@ var ringer = {
     init: function(){
        
       $r = ringer;
+      $r.div = document.createElement('div'); 
       $r.cvs = document.createElement('canvas'); 
       
       $r.size = { 
@@ -39,6 +40,8 @@ var ringer = {
       $r.cvs.setAttribute('width',$r.size.w);           
       $r.cvs.setAttribute('height',$r.size.h);
       $r.ctx = $r.cvs.getContext('2d');
+      /* $(document.body).append($r.cvs); */
+      $(document.body).append($r.div);
       $(document.body).append($r.cvs);
       $r.cvs = $($r.cvs);    
       $r.ctx.textAlign = 'center';
