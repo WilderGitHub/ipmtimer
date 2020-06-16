@@ -82,3 +82,6 @@ body, html {
     color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity; */
     /* mix-blend-mode: luminosity; */
   }
+ div{
+    height: 50px;
+  }
